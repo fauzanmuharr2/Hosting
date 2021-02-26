@@ -67,7 +67,7 @@
                                 <div class="d-flex">
                                     <div class="text-white">
                                         <p class="text-white mb-0">Positif</p>
-                                        <h2 class="mb-0 number-font">{{ number_format($positif) }}</h2>
+                                        <h2 class="mb-0 number-font"><?php number_format($positif); ?></h2>
                                         <p class="text-white mb-0">Orang</p>
                                     </div>
                                     <div class="ml-auto"> <img src="{{ asset('assets/assets/img/sedih.png') }}"
@@ -83,7 +83,7 @@
                                 <div class="d-flex">
                                     <div class="text-white">
                                         <p class="text-white mb-0">Meninggal</p>
-                                        <h2 class="mb-0 number-font">{{ number_format($meninggal) }}</h2>
+                                        <h2 class="mb-0 number-font"><?php number_format($meninggal); ?></h2>
                                         <p class="text-white mb-0">Orang</p>
                                     </div>
                                     <div class="ml-auto"> <img src="{{ asset('assets/assets/img/meninggal.png') }}"
@@ -99,7 +99,7 @@
                                 <div class="d-flex">
                                     <div class="text-white">
                                         <p class="text-white mb-0">Sembuh</p>
-                                        <h2 class="mb-0 number-font">{{ number_format($sembuh) }} </h2>
+                                        <h2 class="mb-0 number-font"><?php number_format($sembuh); ?> </h2>
                                         <p class="text-white mb-0">Orang</p>
                                     </div>
                                     <div class="ml-auto"> <img src="{{ asset('assets/assets/img/sembuh.png') }}"
