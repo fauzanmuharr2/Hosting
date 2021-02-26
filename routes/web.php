@@ -14,13 +14,13 @@ use App\Http\Controllers\CountryController;
 |
 */
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend');
 });
 Route::get('utama', function () {
     return view('utama');
 });
-Route::get('frontend', function () {
-    return view('frontend');
+Route::get('wlc', function () {
+    return view('welcome');
 });
 // use App\Http\Controllers\ProvinsiController;
 // Route::get('/provinsi',[ProvinsiController::class, 'index']);
