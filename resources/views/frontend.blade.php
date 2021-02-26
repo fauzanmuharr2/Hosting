@@ -43,10 +43,18 @@
             </div>
         </div>
     </nav>
+    <style>
+        .jumbotron.night {
+            background-color: #333;
+            color: #eaeaea;
+        }
+
+    </style>
     <!-- Masthead-->
     <header class="masthead bg-white text-black text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <div class="jumbotron">
+        <div class="jumbotron">
+            <div class="container d-flex align-items-center flex-column">
+
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5" alt="" />
                 <!-- Masthead Heading-->
@@ -117,6 +125,8 @@
 
                                         <h2 class="text-white mb-0">Global</h2>
                                         <p class="mb-0 number-font">0</p>
+
+                                        <p class="text-white mb-0">Orang</p>
                                     </div>
                                 </div>
                             </div>
@@ -127,8 +137,9 @@
     </header>
     <!-- Portfolio Section-->
     <section class="page-section portfolio" id="portfolio">
-        <div class="container">
-            <div class="jumbotron">
+
+        <div class="jumbotron">
+            <div class="container">
                 <!-- Portfolio Section Heading-->
                 <h2 class="page-section-heading text-center  text-secondary mb-0">Data Coronavirus
                     Indonesia & Global</h2>
@@ -278,8 +289,8 @@
 
     <!-- About Section-->
     <section class="page-section bg-white text-dark mb-0" id="about">
-        <div class="container">
-            <div class="jumbotron">
+        <div class="jumbotron">
+            <div class="container">
                 <!-- About Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-dark">Tentang</h2>
                 <!-- Icon Divider-->
