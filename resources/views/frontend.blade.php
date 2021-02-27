@@ -209,7 +209,7 @@
 
                                 @foreach ($dataglobal as $global)
                                     <tr>
-                                        <th scope="row"><?php echo $no++; ?></th>
+                                        <td><?php echo $no++; ?></td>
                                         <td><?php echo $global['attributes']['Country_Region']; ?></td>
                                         <td><?php echo number_format($global['attributes']['Confirmed']);
                                             ?></td>

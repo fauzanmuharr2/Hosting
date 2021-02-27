@@ -46,6 +46,6 @@ class FrontendController extends Controller
         $global = file_get_contents('https://api.kawalcorona.com/positif');
                 $getglobal = json_decode($global, TRUE);
 
-            return view('frontend', compact('positif','meninggal','sembuh','tampil','dataglobal','getglobal'));
+            return view('frontend', compact('positif','meninggal','sembuh','tampil','dataglobal','getglobal','global'));
     }
 }
