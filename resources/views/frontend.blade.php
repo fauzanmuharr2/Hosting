@@ -203,22 +203,12 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @php
-                                    $no = 1;
-                                @endphp
+                                {{-- @php --}}
+                                {{-- $no = 1; --}}
+                                {{-- @endphp --}}
 
-                                @foreach ($dataglobal as $global)
-                                    <tr>
-                                        <td><?php echo $no++; ?></td>
-                                        <td><?php echo $global['attributes']['Country_Region']; ?></td>
-                                        <td><?php echo number_format($global['attributes']['Confirmed']);
-                                            ?></td>
-                                        <td><?php echo number_format($global['attributes']['Deaths']);
-                                            ?></td>
-                                        <td><?php echo number_format($global['attributes']['Recovered']);
-                                            ?></td>
-                                    </tr>
-                                @endforeach
+                                {{-- @foreach ($dataglobal as $global) --}}
+                                {{-- @endforeach --}}
                             </tbody>
                         </table>
                     </div>
