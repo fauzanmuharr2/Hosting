@@ -1,14 +1,17 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\DB;
+use App\Http\Controller\Controller;
 use App\Models\Provinsi;
 use App\Models\Kota;
 use App\Models\Kecamatan;
 use App\Models\Kelurahan;
+use App\Models\Rw;
 use App\Models\Kasusid;
-use Illuminate\Support\Facades\DB;
-
-use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
@@ -43,12 +46,6 @@ class FrontendController extends Controller
         $global = file_get_contents('https://api.kawalcorona.com/positif');
                 $getglobal = json_decode($global, TRUE);
 
-        $global = file_get_contents('https://api.kawalcorona.com/sembuh');
-                $semglobal = json_decode($global, TRUE);
-
-        $global = file_get_contents('https://api.kawalcorona.com/meninggal');
-                $meglobal = json_decode($global, TRUE);
-
-            return view('frontend', compact('positif','meninggal','sembuh','tampil','dataglobal','getglobal','semglobal','meglobal'));
+            return view('frontend', compact('positif','meninggal','sembuh','tampil','dataglobal','getglobal'));
     }
 }

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Kasusid extends Model
 {
-    protected $fillable = ['jumlah_positif','jumlah_meninggal', 'jumlah_sembu', 'tanggal','id_rw'];
+    protected $fillable = ['jumlah_positif','jumlah_meninggal', 'jumlah_sembus', 'tanggal','id_rw'];
     public function Rw(){
         return $this->belongsTo('App\Models\Rw','id_rw');
     }

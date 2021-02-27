@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CountryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,9 +14,6 @@ use App\Http\Controllers\CountryController;
 */
 Route::get('/', function () {
     return view('frontend');
-});
-Route::get('utama', function () {
-    return view('utama');
 });
 Route::get('wlc', function () {
     return view('welcome');
