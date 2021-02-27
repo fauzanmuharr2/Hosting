@@ -124,9 +124,9 @@
                                     <div class="text-white">
 
                                         <h2 class="text-white mb-0">Global</h2>
-                                        <p class="mb-0 number-font">0</p>
+                                        <p class="mb-0 number-font"><?php echo $getglobal['value']; ?> POSITIF</p>
 
-                                        <p class="text-white mb-0">Orang</p>
+                                        {{-- <p class="text-white mb-0">Orang</p> --}}
                                     </div>
                                 </div>
                             </div>
@@ -207,16 +207,16 @@
                                     $no = 1;
                                 @endphp
 
-                                {{-- @foreach ($dataglobal as $global)
+                                @foreach ($dataglobal as $global)
                                     <tr>
                                         <th scope="row">{{ $no++ }}</th>
                                         <td>{{ $global['attributes']['Country_Region'] }}</td>
                                         <td>{{ number_format($global['attributes']['Confirmed']) }}</td>
                                         <td>{{ number_format($global['attributes']['Deaths']) }}</td>
                                         <td>{{ number_format($global['attributes']['Recovered']) }}</td>
-                                    </tr> --}}
+                                    </tr>
                             </tbody>
-                            {{-- @endforeach --}}
+                            @endforeach
                         </table>
                     </div>
                 </div>
