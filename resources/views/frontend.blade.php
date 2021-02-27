@@ -124,9 +124,9 @@
                                     <div class="text-white">
 
                                         <h2 class="text-white mb-0">Global</h2>
-                                        <p class="mb-0 number-font"><?php echo $getglobal['value']; ?> POSITIF</p>
+                                        <p class="mb-0 number-font">0</p>
 
-                                        {{-- <p class="text-white mb-0">Orang</p> --}}
+                                        <p class="text-white mb-0">Positif</p>
                                     </div>
                                 </div>
                             </div>
