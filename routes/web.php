@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-use App\Http\Controller\Controller;
+use App\Http\Controllers\CountryController;
 
 /*
 |--------------------------------------------------------------------------

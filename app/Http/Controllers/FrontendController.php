@@ -3,9 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\DB;
-use App\Http\Controller\Controller;
 use App\Models\Provinsi;
 use App\Models\Kota;
 use App\Models\Kecamatan;
