@@ -209,11 +209,14 @@
 
                                 @foreach ($dataglobal as $global)
                                     <tr>
-                                        <th scope="row">{{ $no++ }}</th>
-                                        <td>{{ $global['attributes']['Country_Region'] }}</td>
-                                        <td>{{ number_format($global['attributes']['Confirmed']) }}</td>
-                                        <td>{{ number_format($global['attributes']['Deaths']) }}</td>
-                                        <td>{{ number_format($global['attributes']['Recovered']) }}</td>
+                                        <th scope="row"><?php echo $no++; ?></th>
+                                        <td><?php echo $global['attributes']['Country_Region']; ?></td>
+                                        <td><?php echo number_format($global['attributes']['Confirmed']);
+                                            ?></td>
+                                        <td><?php echo number_format($global['attributes']['Deaths']);
+                                            ?></td>
+                                        <td><?php echo number_format($global['attributes']['Recovered']);
+                                            ?></td>
                                     </tr>
                             </tbody>
                             @endforeach
