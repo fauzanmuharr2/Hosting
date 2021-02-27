@@ -13,10 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', function () {
-    return view('frontend');
+    return view('utama');
 });
 Route::get('wlc', function () {
     return view('welcome');
+});
+Route::get('frontend', function () {
+    return view('frontend');
 });
 // use App\Http\Controllers\ProvinsiController;
 // Route::get('/provinsi',[ProvinsiController::class, 'index']);
