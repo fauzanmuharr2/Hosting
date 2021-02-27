@@ -218,8 +218,8 @@
                                         <td><?php echo number_format($global['attributes']['Recovered']);
                                             ?></td>
                                     </tr>
+                                @endforeach
                             </tbody>
-                            @endforeach
                         </table>
                     </div>
                 </div>
