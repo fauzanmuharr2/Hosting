@@ -1,29 +1,29 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
-      <img src="{{asset('assets/dist/img/covid.png')}}" alt="" class="brand-image img-circle elevation-5"
-           style="opacity: .8">
-      <span class="brand-text font-weight-light"><b>Tracking Covid</b></span>
+        <img src="{{ asset('assets/dist/img/covid.png') }}" alt="" class="brand-image img-circle elevation-5"
+            style="opacity: .8">
+        <span class="brand-text font-weight-light"><b>Tracking Covid</b></span>
     </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="{{asset('assets/dist/img/fauzan.jpg')}}" class="img-circle elevation-2" alt="User Image">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+                <img src="{{ asset('assets/dist/img/fauzan.jpg') }}" class="img-circle elevation-2" alt="User Image">
+            </div>
+            <div class="info">
+                <a href="#" class="d-block">{{ Auth::user()->name }}</a>
+            </div>
         </div>
-        <div class="info">
-          <a href="#" class="d-block">{{Auth::user()->name}}</a>
-        </div>
-      </div>
 
-      <!-- Sidebar Menu -->
-      <nav class="mt-1">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
+        <!-- Sidebar Menu -->
+        <nav class="mt-1">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item has-treeview">
+                {{-- <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <p><i class="fas fa-globe">
                 Kasus Global
@@ -43,22 +43,23 @@
                 </a>
               </li>
             </ul>
-          </li>
+          </li> --}}
 
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link">
-              <p> <i class='fas fa-home'>
-                Kasus Local
-                </i>
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="{{request()->is('provinsi') ? 'active' : ''}">
+                        <li class="nav-item has-treeview menu-open">
+                            <a href="#" class="nav-link">
+                                <p> <i class='fas fa-home'>
+                                        Kasus Local
+                                    </i>
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="{{request()->is('provinsi') ? 'active' : ''}">
                 <a href="/provinsi" class="nav-link">
                   <p>Provinsi</p>
                 </a>

@@ -19,9 +19,6 @@ Route::get('/', function () {
 Route::get('wlc', function () {
     return view('welcome');
 });
-Route::get('frontend', function () {
-    return view('frontend');
-});
 // use App\Http\Controllers\ProvinsiController;
 // Route::get('/provinsi',[ProvinsiController::class, 'index']);
 
