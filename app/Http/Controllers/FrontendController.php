@@ -38,12 +38,12 @@ class FrontendController extends Controller
                 ->groupBy('nama_provinsi')
                 ->get();
 
-        $global = file_get_contents('https://api.kawalcorona.com/');
-        $dataglobal = json_decode($global, TRUE);
+        // $global = file_get_contents('https://api.kawalcorona.com/');
+        // $dataglobal = json_decode($global, TRUE);
 
-        $global = file_get_contents('https://api.kawalcorona.com/positif');
-                $getglobal = json_decode($global, TRUE);
+        // $global = file_get_contents('https://api.kawalcorona.com/positif');
+        //         $getglobal = json_decode($global, TRUE);
 
-            return view('frontend', compact('positif','meninggal','sembuh','tampil','dataglobal','getglobal','global'));
+            return view('frontend', compact('positif','meninggal','sembuh','tampil'));
     }
 }

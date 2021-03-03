@@ -75,7 +75,8 @@
                                 <div class="d-flex">
                                     <div class="text-white">
                                         <p class="text-white mb-0">Positif</p>
-                                        <h4 class="mb-0 number-font">{{ number_format($positif) }}</h4>
+                                        <h4 class="mb-0 number-font"><?php echo number_format($positif);
+                                            ?></h4>
                                         <p class="text-white mb-0">Orang</p>
                                     </div>
                                     <div class="ml-auto"> <img src="{{ asset('assets/assets/img/sedih.png') }}"
@@ -124,7 +125,7 @@
                                     <div class="text-white">
 
                                         <p class="text-white mb-0">Global</p>
-                                        <h4 class="mb-0 number-font"><?php echo $getglobal['value']; ?></h4>
+                                        <h4 class="mb-0 number-font">11,115,160</h4>
 
                                         <p class="text-white mb-0">Positif</p>
                                     </div>
@@ -207,16 +208,16 @@
                                     $no = 1;
                                 @endphp
 
-                                @foreach ($dataglobal as $global)
+                                {{-- @foreach ($dataglobal as $global)
                                     <tr>
                                         <th scope="row">{{ $no++ }}</th>
                                         <td>{{ $global['attributes']['Country_Region'] }}</td>
                                         <td>{{ number_format($global['attributes']['Confirmed']) }}</td>
                                         <td>{{ number_format($global['attributes']['Deaths']) }}</td>
                                         <td>{{ number_format($global['attributes']['Recovered']) }}</td>
-                                    </tr>
+                                    </tr> --}}
                             </tbody>
-                            @endforeach
+                            {{-- @endforeach --}}
                         </table>
                     </div>
                 </div>
